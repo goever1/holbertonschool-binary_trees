@@ -53,7 +53,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	{
 		if (!tree->left && !tree->right)
 			return (1);
-		return (binary_tree_is_full);
+		return (binary_tree_is_full(tree));
 	}
 	return (0);
 }
